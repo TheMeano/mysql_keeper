@@ -17,12 +17,23 @@ header {
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerUser{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-right: 100px;
 }
 
 header h1 {
   color: #fff;
   font-family: "McLaren", cursive;
   font-weight: 200;
+  margin-left: 100px;
 }
 
 footer {
@@ -101,3 +112,35 @@ form button {
   cursor: pointer;
   outline: none;
 }
+
+.link{
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginHeader{
+  margin: 50px 0 20px;
+  font-weight: bold;
+  font-size: 40px;
+  color: black;
+}
+
+.togglePassword{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-eye{
+  margin-right: 150px;
+}
+
