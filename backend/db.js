@@ -1,9 +1,8 @@
 import mysql from "mysql";
 import 'dotenv/config'
 
- export const db = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_KEY,
-    database: process.env.DB_DATABASE
- }) 
+
+const urlDB = `mysql://${process.env.MYSQLUSER}:${process.env.MYSQLPASSWORD}@${process.env.MYSQLHOST}:${process.env.MYSQLPORT}/${process.env.MYSQLDATABASE}`
+
+ export const db = mysql.createConnection(urlDB)
+
